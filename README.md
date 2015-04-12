@@ -18,3 +18,6 @@ Back
 3. 470ohm resistor connected to ground
 4. Adafruit 2 ply Stainless Thin Conductive Thread
 5. 1000mAh Lithium-ion battery
+
+##Libraries used
+1. [LowPower by RocketScream](https://github.com/rocketscream/Low-Power)
