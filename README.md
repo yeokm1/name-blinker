@@ -21,3 +21,4 @@ Back
 
 ##Libraries used
 1. [LowPower by RocketScream](https://github.com/rocketscream/Low-Power)
+2. [3D-Printed letters](http://www.thingiverse.com/thing:15198)
