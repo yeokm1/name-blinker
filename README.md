@@ -16,7 +16,7 @@ Back
 1. LilyPad Arduino USB (ATmega32u4 with integrated Lipo charger)
 2. 9x Adafruit LED Sequins
 3. 470ohm resistor connected to ground
-4. Adafruit 2 ply Stainless Thin Conductive Thread
+4. Adafruit 2-ply and 3-ply Stainless Thin Conductive Thread
 5. 1000mAh Lithium-ion battery
 
 ##Libraries used
