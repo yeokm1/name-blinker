@@ -19,16 +19,10 @@ const int PINS[NUM_LETTERS] = {PIN_K1, PIN_H2, PIN_E3, PIN_N4, PIN_G5
 int currentPinToLight = 0;
 
 void setup() {
-  pinMode(PIN_K1, OUTPUT);
-  pinMode(PIN_H2, OUTPUT);
-  pinMode(PIN_E3, OUTPUT);
-  pinMode(PIN_N4, OUTPUT);
-  pinMode(PIN_G5, OUTPUT);
   
-  pinMode(PIN_M6, OUTPUT);
-  pinMode(PIN_E7, OUTPUT);
-  pinMode(PIN_N8, OUTPUT);
-  pinMode(PIN_G9, OUTPUT);
+  for(int currentPos = 0; currentPos < NUM_LETTERS; currentPos++){
+    pinMode(PINS[currentPos], OUTPUT);
+  }
 
 }
 
@@ -36,14 +30,12 @@ void loop() {
   if(currentPinToLight >= NUM_LETTERS){
     currentPinToLight = 0;
   }
-  
-  
+   
   onlyTurnOnThisLED(currentPinToLight);
-  
- 
+   
   currentPinToLight++;
   
-  customDelay();
+  customDelayBetweenLetters();
 }
 
 
@@ -59,7 +51,7 @@ void onlyTurnOnThisLED(int pinPositionNumber){
   }
 }
 
-void customDelay(){
+void customDelayBetweenLetters(){
   LowPower.powerDown(SLEEP_500MS, ADC_OFF, BOD_OFF);
   LowPower.powerDown(SLEEP_250MS, ADC_OFF, BOD_OFF);
 }
